@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@font-face {
+    font-family: 'Gill Sans';
+    /* O caminho começa direto em /fonts porque tudo na pasta public é servido na raiz */
+    src: url('/gill-sans-2/Gill Sans.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gill Sans Bold';
+    /* O caminho começa direto em /fonts porque tudo na pasta public é servido na raiz */
+    src: url('/gill-sans-2/Gill Sans Bold.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  @theme {
+    /* Agora conectamos o nome da fonte ao sistema do Tailwind */
+    --font-gill: "Gill Sans", sans-serif;
+    --font-gill-bold: "Gill Sans Bold", sans-serif;
+  }

@@ -1,6 +1,7 @@
 import router from "./routers/router.js";
 import express from "express"
 import cors from "cors"
+import sequelize from "./models/db.js";
 
 const app = express()
 app.use(cors())
