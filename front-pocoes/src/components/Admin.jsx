@@ -34,7 +34,7 @@ export default function Admin() {
     }
 
     return (
-        <div className="max-w-5xl mx-auto h-full w-full mb-12 mt-12 p-6 bg-zinc-950 border-purple-400 rounded-xl border shadow-lg">
+        <div className="max-w-5xl mx-auto h-full w-full mb-12 mt-12 p-6 bg-zinc-950 border-purple-500/30 rounded-xl border shadow-lg">
             <h1 className="text-4xl  text-center font-header text-purple-400"> Selecione a Poção que Deseja Apagar</h1>
             {pocoes.map((pocao) => (
                 
