@@ -35,35 +35,46 @@ export default function FormularioCadastro(props){
         }
 
         return(
-            <div className="max-w-md mx-auto mt-12 p-6 bg-zinc-950 rounded-xl border shadow-lg">
-                <h2 className="text-3xl font-gill-bold text-center text-purple-400 mb-6"> 🧪 Criar Poção 🪄</h2>
+            <div className="max-w-3xl mx-auto  p-6 bg-zinc-950 rounded-xl border shadow-lg">
+                <h2 className="text-4xl font-header text-center text-purple-400 mb-6">  Cadastrar Poção </h2>
                 
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                    
                    
 
-                    <div className= "flex flex-col gap-4">
-                        <label className="font-gill w-24 text-gray-300">Nome</label>
-                        <input type= "text" name="nome" value={formData.nome} onChange={handleChange} className="flex-1 border border-gray-300  text-gray-300 bg-transparent rounded-md p-2 shadow-lg"/>
+                    <div className= "flex flex-wrap items-center gap-4">
+                        <label className="font-gill w-24 text-gray-300">Nome:</label>
+                        <input type= "text" name="nome" value={formData.nome} onChange={handleChange} 
+                        placeholder="Ex: Poção de Cura"
+                        className="flex-1 border border-gray-300  text-gray-300 bg-transparent rounded-md p-2 shadow-lg 
+                        focus:outline-none focus:border-purple-300 focus:ring-1 focus:ring-purple-500 transition-colors"/>
                     </div>
 
-                    <div className= "flex flex-col gap-4">
-                        <label className="font-gill w-24 text-gray-300">Descrição</label>
-                        <input type= "text" name="descricao" value={formData.descricao} onChange={handleChange} className="flex-1 border border-gray-300  text-gray-300 bg-transparent rounded-md p-2 shadow-lg"/>
+                    <div className= "flex flex-wrap items-center gap-4">
+                        <label className="font-gill w-24 text-gray-300">Descrição:</label>
+                        <input type= "text" name="descricao" value={formData.descricao} onChange={handleChange}
+                        placeholder="Ex: Restaura 50 pontos de vida..."
+                        className="flex-1 border border-gray-300  text-gray-300 bg-transparent rounded-md p-2 shadow-lg
+                        focus:outline-none focus:border-purple-300 focus:ring-1 focus:ring-purple-500 transition-colors"/>
                     </div>
 
-                    <div className= "flex flex-col gap-4">
-                        <label className="font-gill w-24 text-gray-300">Foto</label>
-                        <input type= "text" name="foto" value={formData.foto} onChange={handleChange} className="flex-1 border border-gray-300 rounded-md bg-transparent text-gray-300 p-2 shadow-lg"/>
+                    <div className= "flex flex-wrap items-center gap-4">
+                        <label className="font-gill w-24 text-gray-300">Foto:</label>
+                        <input type= "text" name="foto" value={formData.foto} onChange={handleChange}
+                        placeholder="Ex: https://urlexemplo/foto"
+                        className="flex-1 border border-gray-300 rounded-md bg-transparent text-gray-300 p-2 shadow-lg
+                        focus:outline-none focus:border-purple-300 focus:ring-1 focus:ring-purple-500 transition-colors"/>
                     </div>
 
-                    <div className= "flex flex-col gap-4">
-                        <label className="font-gill w-24 text-gray-300">Valor</label>
-                       
-                        <input type="number" name="valor" value={formData.valor} onChange={handleChange} className="flex-1 border border-gray-300 rounded-md bg-transparent text-gray-300 p-2 shadow-lg"/>
+                    <div className= "flex flex-wrap items-center gap-4">
+                        <label className="font-gill w-24 text-gray-300">Valor:</label>
+                        <input type="number" name="valor" value={formData.valor} onChange={handleChange} 
+                        placeholder="Ex: 300"
+                        className="flex-1 border border-gray-300 rounded-md bg-transparent text-gray-300 p-2 shadow-lg
+                        focus:outline-none focus:border-purple-300 focus:ring-1 focus:ring-purple-500 transition-colors"/>
                     </div>
 
-                    <div className="text-center mt-4 bg-yellow-500 hover:bg-yellow-400 transition-colors text-black py-2 rounded-md p-2 mx-auto w-32 cursor-pointer">
+                    <div className="text-center mt-4 bg-yellow-500 hover:bg-yellow-400 transition-colors text-black py-2 rounded-md p-2 mx-auto w-36 cursor-pointer">
                         <button type="submit" className="font-gill-bold w-full h-full">Salvar</button>
                     </div>
                 </form>
